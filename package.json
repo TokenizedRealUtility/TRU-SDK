@@ -16,7 +16,8 @@
     "README.md",
     "API.md",
     "SECURITY.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "NOTICE"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
