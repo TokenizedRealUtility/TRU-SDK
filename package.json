@@ -47,5 +47,6 @@
   "homepage": "https://github.com/TokenizedRealUtility/TRU-SDK#readme",
   "bugs": {
     "url": "https://github.com/TokenizedRealUtility/TRU-SDK/issues"
-  }
+  },
+  "license": "Apache-2.0"
 }

@@ -1,0 +1,40 @@
+TRU SDK — Tokenized Real Utility
+====================================
+
+Copyright 2026 Tokenized Real Utility
+
+TRU SDK is open-source software distributed under the Apache License,
+Version 2.0.
+
+Project:
+  TRU — Tokenized Real Utility
+  https://tokenizedrealutility.com/
+
+Repository:
+  https://github.com/TokenizedRealUtility/TRU-SDK
+
+Purpose:
+  A developer SDK for building applications, wallets, services,
+  blockchain integrations, token systems, mining integrations,
+  smart-contract applications, TRUScript applications, and
+  NEROMESH / AXON integrations on the TRU ecosystem.
+
+SECURITY AND NETWORK NOTICE
+
+TRU SDK is infrastructure software. Applications built with it may
+interact with cryptographic keys, blockchain transactions, digital
+assets, smart contracts, mining systems, distributed compute systems,
+and network services.
+
+Developers are responsible for:
+  • protecting credentials, private keys, seeds, RPC tokens, and secrets;
+  • validating transaction intent before signing or broadcasting;
+  • keeping privileged TRU Core RPC endpoints private and authenticated;
+  • testing software against appropriate development/test environments;
+  • reviewing financial, consensus, custody, and security assumptions.
+
+The TRU SDK does not grant any right to use TRU, Tokenized Real Utility,
+or related project names, logos, branding, or trademarks except as
+necessary to accurately identify compatibility with the project.
+
+This NOTICE is informational and does not modify the Apache License 2.0.
