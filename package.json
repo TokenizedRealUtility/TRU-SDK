@@ -1,7 +1,7 @@
 {
   "name": "@tru/sdk",
   "version": "1.0.0",
-  "description": "TypeScript/JavaScript SDK for TRU \u2014 Tokenized Real Utility",
+  "description": "TypeScript/JavaScript SDK for TRU — Tokenized Real Utility",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -39,5 +39,13 @@
   },
   "devDependencies": {
     "typescript": "^5.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TokenizedRealUtility/TRU-SDK.git"
+  },
+  "homepage": "https://github.com/TokenizedRealUtility/TRU-SDK#readme",
+  "bugs": {
+    "url": "https://github.com/TokenizedRealUtility/TRU-SDK/issues"
   }
 }
