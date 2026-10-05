@@ -1,4 +1,4 @@
-import { NeromeshClient } from '@tru/sdk';
+import { NeromeshClient } from '@tokenizedrealutility/sdk';
 
 const mesh = new NeromeshClient({
   baseUrl: 'https://tru.neromesh.space',

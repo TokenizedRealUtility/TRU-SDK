@@ -1,4 +1,4 @@
-import { TruClient } from '@tru/sdk';
+import { TruClient } from '@tokenizedrealutility/sdk';
 
 declare const tru: TruClient;
 

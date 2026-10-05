@@ -4,7 +4,7 @@
 
 It gives application developers one organized API for TRU Core JSON-RPC, the public Explorer API, TRUScripts, native tokens, contracts, Magic Locks, mining telemetry, AI/evolution, HTLC/swap primitives, DID/social functions, and NEROMESH / AXON HTTP services.
 
-> Proposed npm package name: `@tru/sdk`. Confirm that the npm scope is owned before publishing, or rename the package to the scope you control.
+> Official npm package: `@tokenizedrealutility/sdk`
 
 ## Goals
 
@@ -81,7 +81,7 @@ npm test
 After publishing to npm:
 
 ```bash
-npm install @tru/sdk
+npm install @tokenizedrealutility/sdk
 ```
 
 Requires Node.js 18+ for native `fetch`, or a modern browser/bundler.
@@ -92,7 +92,7 @@ Direct Core RPC is privileged. Read the Core RPC cookie/token on the server side
 
 ```ts
 import { readFile } from "node:fs/promises";
-import { TruClient } from "@tru/sdk";
+import { TruClient } from "@tokenizedrealutility/sdk";
 
 const token = (await readFile(
   `${process.env.HOME}/.tru/rpc-cookie-21832`,
@@ -116,7 +116,7 @@ console.log(await tru.chain.getChainInfo());
 For browser applications, use the public allowlisted gateway instead:
 
 ```ts
-import { TruClient } from "@tru/sdk";
+import { TruClient } from "@tokenizedrealutility/sdk";
 
 const tru = TruClient.public({
   explorerUrl: "https://tokenizedrealutility.com",
@@ -171,7 +171,7 @@ TRU uses:
 Use the SDK helpers:
 
 ```ts
-import { parseTru, formatTru } from "@tru/sdk";
+import { parseTru, formatTru } from "@tokenizedrealutility/sdk";
 
 const atoms = parseTru("45.25000000");
 // 4525000000n
@@ -368,7 +368,7 @@ The Explorer client is read-only except for RPC gateways handled by `TruClient.p
 ## NEROMESH / AXON
 
 ```ts
-import { NeromeshClient } from "@tru/sdk";
+import { NeromeshClient } from "@tokenizedrealutility/sdk";
 
 const mesh = new NeromeshClient({
   baseUrl: "https://tru.neromesh.space",
@@ -422,7 +422,7 @@ import {
   TruNodeBusyError,
   TruInsufficientFundsError,
   TruTokenNotFoundError
-} from "@tru/sdk";
+} from "@tokenizedrealutility/sdk";
 
 try {
   await tru.tokens.send("TOKEN", "T...", "1");
@@ -466,7 +466,7 @@ const result = await tru.raw.call(
 Inspect the current catalog:
 
 ```ts
-import { RPC_CATALOG } from "@tru/sdk";
+import { RPC_CATALOG } from "@tokenizedrealutility/sdk";
 
 for (const method of RPC_CATALOG) {
   console.log(method.method, method.category, method.gateway);

@@ -1,4 +1,4 @@
-import { TruClient } from '@tru/sdk';
+import { TruClient } from '@tokenizedrealutility/sdk';
 
 const tru = TruClient.public({
   explorerUrl: 'https://tokenizedrealutility.com',

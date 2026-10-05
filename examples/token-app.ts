@@ -1,4 +1,4 @@
-import { TruClient } from '@tru/sdk';
+import { TruClient } from '@tokenizedrealutility/sdk';
 
 // Supply an authenticated server-side Core transport.
 declare const tru: TruClient;

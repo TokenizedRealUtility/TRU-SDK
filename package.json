@@ -1,5 +1,5 @@
 {
-  "name": "@tru/sdk",
+  "name": "@tokenizedrealutility/sdk",
   "version": "1.0.0",
   "description": "TypeScript/JavaScript SDK for TRU — Tokenized Real Utility",
   "type": "module",
