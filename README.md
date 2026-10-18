@@ -562,3 +562,20 @@ Initial public developer SDK for TRU Core, Explorer, and NEROMESH / AXON integra
 ## Core 0.08.5 Quantum Wallet extension
 
 See [QUANTUM-WALLET.md](QUANTUM-WALLET.md) for the new `tru.quantum` API and local terminal application. Core remains the signer and owns the encrypted one-time-key state. No consensus changes. This local extension is not yet an npm-published release.
+
+
+## Quantum Wallet (PQ01 WOTS+) — local terminal and optional HTTPS LAN interface
+
+```bash
+npm ci
+npm run quantum:wallet
+```
+
+First launch opens an interactive configuration wizard for localhost or private HTTPS LAN use; later launches load `apps/quantum-wallet/.env` automatically. Full setup, wildcard-bind restrictions, certificate trust and wallet-state cautions: [Quantum Wallet Getting Started](apps/quantum-wallet/GETTING-STARTED.md). Core RPC stays local; no change to the existing explorer wallet or token functions.
+
+
+## TRU Quantum Wallet v0.3
+
+Aurora web interface, terminal wallet, WOTS+ PQ01 transactions, first-time setup wizard, and secure LAN HTTPS.
+
+[**Quantum Wallet installation and complete guide**](apps/quantum-wallet/README.md)
