@@ -10,3 +10,6 @@ export type * from "./types.js";
 export type { TruClientOptions, PublicTruClientOptions } from "./client.js";
 export type { NeromeshOptions } from "./neromesh.js";
 export type { IssueTokenParams } from "./modules/tokens.js";
+
+export { QuantumModule } from "./modules/quantum.js";
+export type { QuantumOutpoint, QuantumFunding, QuantumSpend, QuantumExit, QuantumConsensusInfo } from "./modules/quantum.js";

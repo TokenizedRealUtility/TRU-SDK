@@ -1,9 +1,13 @@
 import type { RpcMethodDescriptor } from "./types.js";
 
-// Source-derived catalog from the reviewed TRU Core 0.07.5 dispatcher.
+// Base catalog from Core 0.07.5, with Core 0.08.5 quantum RPC additions.
 // Parameter names are best-effort handler observations; use raw.call() for
 // forward-compatible access to new/less-structured RPCs.
 export const RPC_CATALOG: readonly RpcMethodDescriptor[] = [
+  { method:"getconsensus09info", category:"quantum", gateway:["privileged"], params:[] },
+  { method:"quantumwallet", category:"quantum", gateway:["privileged"], params:["action","txid","vout","fee_atoms","destination","source","confirm_exit"] },
+  { method:"getquantuminput", category:"quantum", gateway:["privileged"], params:["txid","vout"] },
+  { method:"sendquantumtransaction", category:"quantum", gateway:["privileged"], params:["txHex"] },
   { method:"getpeerinfo", category:"network", gateway:["privileged","wallet"], params:[] },
   { method:"sendtoken", category:"tokens", gateway:["privileged"], params:["amount","recipient","senderAddress","tokenID"] },
   { method:"burntoken", category:"tokens", gateway:["privileged"], params:["confirm","senderAddress","tokenID"] },

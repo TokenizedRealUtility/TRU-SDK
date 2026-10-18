@@ -557,3 +557,8 @@ TRU SDK v1.0.0
 ```
 
 Initial public developer SDK for TRU Core, Explorer, and NEROMESH / AXON integration.
+
+
+## Core 0.08.5 Quantum Wallet extension
+
+See [QUANTUM-WALLET.md](QUANTUM-WALLET.md) for the new `tru.quantum` API and local terminal application. Core remains the signer and owns the encrypted one-time-key state. No consensus changes. This local extension is not yet an npm-published release.

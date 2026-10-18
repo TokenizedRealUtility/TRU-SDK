@@ -208,3 +208,8 @@ The high-level SDK does not automatically retry state-changing methods. The raw 
 ```ts
 await tru.raw.call("getchaininfo", {}, { retries: 3, retryDelayMs: 200 });
 ```
+
+
+## Core 0.08.5 Quantum Wallet extension
+
+See [QUANTUM-WALLET.md](QUANTUM-WALLET.md) for the new `tru.quantum` API and local terminal application. Core remains the signer and owns the encrypted one-time-key state. No consensus changes. This local extension is not yet an npm-published release.

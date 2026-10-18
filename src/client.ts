@@ -1,3 +1,4 @@
+import { QuantumModule } from "./modules/quantum.js";
 import type { FetchLike, RpcTransportOptions, TokenProvider } from "./types.js";
 import { RpcTransport } from "./transport.js";
 import { SystemModule } from "./modules/system.js";
@@ -34,6 +35,7 @@ export interface PublicTruClientOptions {
 
 export class TruClient {
   readonly rpc: RpcTransport;
+  readonly quantum: QuantumModule;
   readonly system: SystemModule;
   readonly chain: ChainModule;
   readonly network: NetworkModule;
@@ -55,6 +57,7 @@ export class TruClient {
 
   constructor(options: TruClientOptions) {
     this.rpc = new RpcTransport(options.core);
+    this.quantum = new QuantumModule(this.rpc);
     this.system = new SystemModule(this.rpc);
     this.chain = new ChainModule(this.rpc);
     this.network = new NetworkModule(this.rpc);
