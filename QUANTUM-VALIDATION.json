@@ -1,0 +1,16 @@
+{
+  "basis_archive_commit": "9e30c99ee77f28482bf94cffc308a51dd921830e",
+  "core_consensus_changed": false,
+  "tests": "12/12 SDK tests passed; app syntax and help passed; live Core/mainnet integration not performed",
+  "changed_files": [
+    "API.md",
+    "QUANTUM-WALLET.md",
+    "README.md",
+    "apps/quantum-wallet/wallet.mjs",
+    "src/client.ts",
+    "src/index.ts",
+    "src/modules/quantum.ts",
+    "src/rpc-catalog.ts",
+    "tests/quantum.test.mjs"
+  ]
+}

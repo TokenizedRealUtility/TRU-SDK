@@ -1,7 +1,7 @@
 {
   "name": "@tokenizedrealutility/sdk",
   "version": "1.0.0",
-  "description": "TypeScript/JavaScript SDK for TRU — Tokenized Real Utility",
+  "description": "TypeScript/JavaScript SDK for TRU \u2014 Tokenized Real Utility",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -23,7 +23,11 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node --test tests/*.test.mjs",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "npm test",
+    "quantum:wallet": "node apps/quantum-wallet/launch.mjs",
+    "quantum:setup": "node apps/quantum-wallet/setup.mjs",
+    "quantum:web": "node apps/quantum-wallet/web.mjs",
+    "quantum:terminal": "node apps/quantum-wallet/terminal.mjs"
   },
   "keywords": [
     "tru",
