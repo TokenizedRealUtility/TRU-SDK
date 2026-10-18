@@ -16,7 +16,7 @@ The original SDK already supports arbitrary authenticated RPC through `tru.raw.c
 
 The reported mainnet activation is **50,000**, inclusive. `active` is evaluated at `candidate_height`, the next block: a tip of 49,999 can report active for candidate 50,000. Always query the node; do not infer current height from an old screenshot or version string. Developing/testing this SDK does not require a new activation height.
 
-## Install on gw878
+## TESTED On LOCAL CORE
 
 Extract the archive into a new directory, then enter `TRU-SDK-main`:
 
